@@ -14,6 +14,12 @@
 		5955ACED247D8233002242F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5955ACEC247D8233002242F5 /* Preview Assets.xcassets */; };
 		5955ACF0247D8233002242F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5955ACEE247D8233002242F5 /* LaunchScreen.storyboard */; };
 		5955ACFB247D8233002242F5 /* jo_zuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5955ACFA247D8233002242F5 /* jo_zuTests.swift */; };
+		5955AD06247D825E002242F5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5955AD05247D825E002242F5 /* CardView.swift */; };
+		5955AD08247D827A002242F5 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5955AD07247D827A002242F5 /* Content.swift */; };
+		5955AD0A247D8CF3002242F5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5955AD09247D8CF3002242F5 /* Card.swift */; };
+		5955AD0E247D8EEE002242F5 /* AnswerCardContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5955AD0D247D8EEE002242F5 /* AnswerCardContainer.swift */; };
+		5955AD11247D9F67002242F5 /* CardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5955AD10247D9F67002242F5 /* CardContainerView.swift */; };
+		5955AD13247DA8B2002242F5 /* ContentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5955AD12247DA8B2002242F5 /* ContentInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5955ACE0247D8230002242F5 /* jōzu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jōzu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5955ACE0247D8230002242F5 /* jozu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jozu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5955ACE3247D8230002242F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5955ACE5247D8230002242F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5955ACE7247D8230002242F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,9 +41,15 @@
 		5955ACEC247D8233002242F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5955ACEF247D8233002242F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5955ACF1247D8233002242F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5955ACF6247D8233002242F5 /* jōzuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "jōzuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5955ACF6247D8233002242F5 /* jozuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jozuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5955ACFA247D8233002242F5 /* jo_zuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jo_zuTests.swift; sourceTree = "<group>"; };
 		5955ACFC247D8233002242F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5955AD05247D825E002242F5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5955AD07247D827A002242F5 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		5955AD09247D8CF3002242F5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		5955AD0D247D8EEE002242F5 /* AnswerCardContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardContainer.swift; sourceTree = "<group>"; };
+		5955AD10247D9F67002242F5 /* CardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContainerView.swift; sourceTree = "<group>"; };
+		5955AD12247DA8B2002242F5 /* ContentInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentInformation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +73,7 @@
 		5955ACD7247D8230002242F5 = {
 			isa = PBXGroup;
 			children = (
-				5955ACE2247D8230002242F5 /* jōzu */,
+				5955ACE2247D8230002242F5 /* jozu */,
 				5955ACF9247D8233002242F5 /* jōzuTests */,
 				5955ACE1247D8230002242F5 /* Products */,
 			);
@@ -70,24 +82,30 @@
 		5955ACE1247D8230002242F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5955ACE0247D8230002242F5 /* jōzu.app */,
-				5955ACF6247D8233002242F5 /* jōzuTests.xctest */,
+				5955ACE0247D8230002242F5 /* jozu.app */,
+				5955ACF6247D8233002242F5 /* jozuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5955ACE2247D8230002242F5 /* jōzu */ = {
+		5955ACE2247D8230002242F5 /* jozu */ = {
 			isa = PBXGroup;
 			children = (
 				5955ACE3247D8230002242F5 /* AppDelegate.swift */,
 				5955ACE5247D8230002242F5 /* SceneDelegate.swift */,
 				5955ACE7247D8230002242F5 /* ContentView.swift */,
+				5955AD12247DA8B2002242F5 /* ContentInformation.swift */,
+				5955AD05247D825E002242F5 /* CardView.swift */,
+				5955AD0D247D8EEE002242F5 /* AnswerCardContainer.swift */,
+				5955AD10247D9F67002242F5 /* CardContainerView.swift */,
+				5955AD09247D8CF3002242F5 /* Card.swift */,
+				5955AD07247D827A002242F5 /* Content.swift */,
 				5955ACE9247D8233002242F5 /* Assets.xcassets */,
 				5955ACEE247D8233002242F5 /* LaunchScreen.storyboard */,
 				5955ACF1247D8233002242F5 /* Info.plist */,
 				5955ACEB247D8233002242F5 /* Preview Content */,
 			);
-			path = "jōzu";
+			path = jozu;
 			sourceTree = "<group>";
 		};
 		5955ACEB247D8233002242F5 /* Preview Content */ = {
@@ -110,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5955ACDF247D8230002242F5 /* jōzu */ = {
+		5955ACDF247D8230002242F5 /* jozu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5955ACFF247D8233002242F5 /* Build configuration list for PBXNativeTarget "jōzu" */;
+			buildConfigurationList = 5955ACFF247D8233002242F5 /* Build configuration list for PBXNativeTarget "jozu" */;
 			buildPhases = (
 				5955ACDC247D8230002242F5 /* Sources */,
 				5955ACDD247D8230002242F5 /* Frameworks */,
@@ -122,14 +140,14 @@
 			);
 			dependencies = (
 			);
-			name = "jōzu";
+			name = jozu;
 			productName = "jōzu";
-			productReference = 5955ACE0247D8230002242F5 /* jōzu.app */;
+			productReference = 5955ACE0247D8230002242F5 /* jozu.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5955ACF5247D8233002242F5 /* jōzuTests */ = {
+		5955ACF5247D8233002242F5 /* jozuTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5955AD02247D8233002242F5 /* Build configuration list for PBXNativeTarget "jōzuTests" */;
+			buildConfigurationList = 5955AD02247D8233002242F5 /* Build configuration list for PBXNativeTarget "jozuTests" */;
 			buildPhases = (
 				5955ACF2247D8233002242F5 /* Sources */,
 				5955ACF3247D8233002242F5 /* Frameworks */,
@@ -140,9 +158,9 @@
 			dependencies = (
 				5955ACF8247D8233002242F5 /* PBXTargetDependency */,
 			);
-			name = "jōzuTests";
+			name = jozuTests;
 			productName = "jōzuTests";
-			productReference = 5955ACF6247D8233002242F5 /* jōzuTests.xctest */;
+			productReference = 5955ACF6247D8233002242F5 /* jozuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -164,7 +182,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5955ACDB247D8230002242F5 /* Build configuration list for PBXProject "jōzu" */;
+			buildConfigurationList = 5955ACDB247D8230002242F5 /* Build configuration list for PBXProject "jozu" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -177,8 +195,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5955ACDF247D8230002242F5 /* jōzu */,
-				5955ACF5247D8233002242F5 /* jōzuTests */,
+				5955ACDF247D8230002242F5 /* jozu */,
+				5955ACF5247D8233002242F5 /* jozuTests */,
 			);
 		};
 /* End PBXProject section */
@@ -209,7 +227,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5955ACE4247D8230002242F5 /* AppDelegate.swift in Sources */,
+				5955AD0A247D8CF3002242F5 /* Card.swift in Sources */,
+				5955AD11247D9F67002242F5 /* CardContainerView.swift in Sources */,
+				5955AD13247DA8B2002242F5 /* ContentInformation.swift in Sources */,
+				5955AD0E247D8EEE002242F5 /* AnswerCardContainer.swift in Sources */,
 				5955ACE6247D8230002242F5 /* SceneDelegate.swift in Sources */,
+				5955AD06247D825E002242F5 /* CardView.swift in Sources */,
+				5955AD08247D827A002242F5 /* Content.swift in Sources */,
 				5955ACE8247D8230002242F5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,7 +251,7 @@
 /* Begin PBXTargetDependency section */
 		5955ACF8247D8233002242F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5955ACDF247D8230002242F5 /* jōzu */;
+			target = 5955ACDF247D8230002242F5 /* jozu */;
 			targetProxy = 5955ACF7247D8233002242F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -363,15 +387,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"jōzu/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"jozu/Preview Content\"";
 				DEVELOPMENT_TEAM = 66KJH684S8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "jōzu/Info.plist";
+				INFOPLIST_FILE = jozu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.keuha.jo-zu";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.keuha.jozu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,15 +407,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"jōzu/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"jozu/Preview Content\"";
 				DEVELOPMENT_TEAM = 66KJH684S8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "jōzu/Info.plist";
+				INFOPLIST_FILE = jozu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.keuha.jo-zu";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.keuha.jozu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,7 +440,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jōzu.app/jōzu";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jozu.app/jozu";
 			};
 			name = Debug;
 		};
@@ -438,14 +462,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jōzu.app/jōzu";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jozu.app/jozu";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5955ACDB247D8230002242F5 /* Build configuration list for PBXProject "jōzu" */ = {
+		5955ACDB247D8230002242F5 /* Build configuration list for PBXProject "jozu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5955ACFD247D8233002242F5 /* Debug */,
@@ -454,7 +478,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5955ACFF247D8233002242F5 /* Build configuration list for PBXNativeTarget "jōzu" */ = {
+		5955ACFF247D8233002242F5 /* Build configuration list for PBXNativeTarget "jozu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5955AD00247D8233002242F5 /* Debug */,
@@ -463,7 +487,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5955AD02247D8233002242F5 /* Build configuration list for PBXNativeTarget "jōzuTests" */ = {
+		5955AD02247D8233002242F5 /* Build configuration list for PBXNativeTarget "jozuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5955AD03247D8233002242F5 /* Debug */,
