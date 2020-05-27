@@ -9,24 +9,28 @@
 import SwiftUI
 
 struct CardContainerView: View {
-    var guess: String
-    var answers: [String]
+    @ObservedObject var contentHandler = ContentHandler()
     var body: some View {
         VStack {
             HStack {
                 Spacer()
-                CardView(content: guess).cornerRadius(25).padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                CardView(content: self.contentHandler.toGuess.content).cornerRadius(25).padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                 Spacer()
             }
             Spacer()
-            AnswerCardContainer(content: answers)
+            AnswerCardContainer(content: self.contentHandler.possibilities.map{e in e.content}, onTap: verify)
             Spacer()
         }
     }
-}
-
-struct CardContainerView_Previews: PreviewProvider {
-    static var previews: some View {
-        CardContainerView(guess: "シ", answers:  ["to", "shi", "te", "ru"])
+    
+    func verify(content: String) -> Bool {
+        print(contentHandler.toGuess.content)
+        print(contentHandler.possibilities)
+        if contentHandler.verify(content: content) {
+            contentHandler.generate()
+            return true;
+        }
+        return false;
     }
 }
+

@@ -10,25 +10,27 @@ import SwiftUI
 
 struct AnswerCardContainer: View {
     var content : [String]
+    var onTap: ((String) -> Bool)
     var body: some View {
         VStack {
             HStack {
                 Spacer()
                 buttonCreator(0).onTapGesture {
-                    print(self.content[0])
+                    
+                    self.onTap(self.content[0])
                 }
                 buttonCreator(1).onTapGesture {
-                    print(self.content[1])
+                    self.onTap(self.content[1])
                 }
                 Spacer()
             }
             HStack {
                 Spacer()
                 buttonCreator(2).onTapGesture {
-                   print(self.content[2])
+                    self.onTap(self.content[2])
                 }
                 buttonCreator(3).onTapGesture {
-                    print(self.content[3])
+                    self.onTap(self.content[3])
                 }
                  Spacer()
             }
@@ -37,16 +39,5 @@ struct AnswerCardContainer: View {
     
     func buttonCreator(_ idx: Int) -> some View {
         CardView(content: content[idx], fontSize: 20).cornerRadius(20)
-    }
-}
-
-struct AnswerCardContainer_Previews: PreviewProvider {
-    static var previews: some View {
-        ForEach(deviceNames, id: \.self) { deviceName in
-               AnswerCardContainer(content: ["to", "mo", "da", "chi"]).frame(width: 400, height: 20, alignment: .center)
-               .previewDevice(PreviewDevice(rawValue: deviceName))
-                 .previewDisplayName(deviceName)
-             }
-       
     }
 }

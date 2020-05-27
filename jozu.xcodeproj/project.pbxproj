@@ -20,6 +20,7 @@
 		5955AD0E247D8EEE002242F5 /* AnswerCardContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5955AD0D247D8EEE002242F5 /* AnswerCardContainer.swift */; };
 		5955AD11247D9F67002242F5 /* CardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5955AD10247D9F67002242F5 /* CardContainerView.swift */; };
 		5955AD13247DA8B2002242F5 /* ContentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5955AD12247DA8B2002242F5 /* ContentInformation.swift */; };
+		59B97873247EE06F008722FE /* ContentGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B97872247EE06F008722FE /* ContentGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		5955AD0D247D8EEE002242F5 /* AnswerCardContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardContainer.swift; sourceTree = "<group>"; };
 		5955AD10247D9F67002242F5 /* CardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContainerView.swift; sourceTree = "<group>"; };
 		5955AD12247DA8B2002242F5 /* ContentInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentInformation.swift; sourceTree = "<group>"; };
+		59B97872247EE06F008722FE /* ContentGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				5955ACE3247D8230002242F5 /* AppDelegate.swift */,
 				5955ACE5247D8230002242F5 /* SceneDelegate.swift */,
 				5955ACE7247D8230002242F5 /* ContentView.swift */,
+				59B97872247EE06F008722FE /* ContentGenerator.swift */,
 				5955AD12247DA8B2002242F5 /* ContentInformation.swift */,
 				5955AD05247D825E002242F5 /* CardView.swift */,
 				5955AD0D247D8EEE002242F5 /* AnswerCardContainer.swift */,
@@ -233,6 +236,7 @@
 				5955AD0E247D8EEE002242F5 /* AnswerCardContainer.swift in Sources */,
 				5955ACE6247D8230002242F5 /* SceneDelegate.swift in Sources */,
 				5955AD06247D825E002242F5 /* CardView.swift in Sources */,
+				59B97873247EE06F008722FE /* ContentGenerator.swift in Sources */,
 				5955AD08247D827A002242F5 /* Content.swift in Sources */,
 				5955ACE8247D8230002242F5 /* ContentView.swift in Sources */,
 			);
