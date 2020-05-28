@@ -14,7 +14,7 @@ struct CardContainerView: View {
         VStack {
             HStack {
                 Spacer()
-                CardView(content: self.contentHandler.toGuess.content).cornerRadius(25).padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                VoiceReadingCard(cardViewContent: self.contentHandler.toGuess.content).cornerRadius(25).padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                 Spacer()
             }
             Spacer()

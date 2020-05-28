@@ -7,8 +7,10 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct AnswerCardContainer: View {
+    let synth = AVSpeechSynthesizer()
     var content : [String]
     var onTap: ((String) -> Bool)
     var body: some View {
@@ -16,10 +18,11 @@ struct AnswerCardContainer: View {
             HStack {
                 Spacer()
                 buttonCreator(0).onTapGesture {
-                    
+                    self.read(str: self.content[0])
                     self.onTap(self.content[0])
                 }
                 buttonCreator(1).onTapGesture {
+                    self.read(str: self.content[1])
                     self.onTap(self.content[1])
                 }
                 Spacer()
@@ -27,9 +30,11 @@ struct AnswerCardContainer: View {
             HStack {
                 Spacer()
                 buttonCreator(2).onTapGesture {
+                     self.read(str: self.content[2])
                     self.onTap(self.content[2])
                 }
                 buttonCreator(3).onTapGesture {
+                    self.read(str: self.content[3])
                     self.onTap(self.content[3])
                 }
                  Spacer()
@@ -39,5 +44,11 @@ struct AnswerCardContainer: View {
     
     func buttonCreator(_ idx: Int) -> some View {
         CardView(content: content[idx], fontSize: 20).cornerRadius(20)
+    }
+    
+    func read(str:String) {
+        let utterance = AVSpeechUtterance(string: str)
+        utterance.voice = AVSpeechSynthesisVoice(language: "ja-JP")
+        synth.speak(utterance)
     }
 }

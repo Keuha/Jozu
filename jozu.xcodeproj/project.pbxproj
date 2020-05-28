@@ -20,6 +20,8 @@
 		5955AD0E247D8EEE002242F5 /* AnswerCardContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5955AD0D247D8EEE002242F5 /* AnswerCardContainer.swift */; };
 		5955AD11247D9F67002242F5 /* CardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5955AD10247D9F67002242F5 /* CardContainerView.swift */; };
 		5955AD13247DA8B2002242F5 /* ContentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5955AD12247DA8B2002242F5 /* ContentInformation.swift */; };
+		596244132480420B005A8E85 /* VoiceReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596244122480420B005A8E85 /* VoiceReader.swift */; };
+		59624417248047CC005A8E85 /* speaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 59624416248047CC005A8E85 /* speaker.png */; };
 		59B97873247EE06F008722FE /* ContentGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B97872247EE06F008722FE /* ContentGenerator.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		5955AD0D247D8EEE002242F5 /* AnswerCardContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardContainer.swift; sourceTree = "<group>"; };
 		5955AD10247D9F67002242F5 /* CardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContainerView.swift; sourceTree = "<group>"; };
 		5955AD12247DA8B2002242F5 /* ContentInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentInformation.swift; sourceTree = "<group>"; };
+		596244122480420B005A8E85 /* VoiceReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceReader.swift; sourceTree = "<group>"; };
+		59624416248047CC005A8E85 /* speaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speaker.png; sourceTree = "<group>"; };
 		59B97872247EE06F008722FE /* ContentGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,9 +105,11 @@
 				5955AD05247D825E002242F5 /* CardView.swift */,
 				5955AD0D247D8EEE002242F5 /* AnswerCardContainer.swift */,
 				5955AD10247D9F67002242F5 /* CardContainerView.swift */,
+				596244122480420B005A8E85 /* VoiceReader.swift */,
 				5955AD09247D8CF3002242F5 /* Card.swift */,
 				5955AD07247D827A002242F5 /* Content.swift */,
 				5955ACE9247D8233002242F5 /* Assets.xcassets */,
+				59624416248047CC005A8E85 /* speaker.png */,
 				5955ACEE247D8233002242F5 /* LaunchScreen.storyboard */,
 				5955ACF1247D8233002242F5 /* Info.plist */,
 				5955ACEB247D8233002242F5 /* Preview Content */,
@@ -212,6 +218,7 @@
 				5955ACF0247D8233002242F5 /* LaunchScreen.storyboard in Resources */,
 				5955ACED247D8233002242F5 /* Preview Assets.xcassets in Resources */,
 				5955ACEA247D8233002242F5 /* Assets.xcassets in Resources */,
+				59624417248047CC005A8E85 /* speaker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +245,7 @@
 				5955AD06247D825E002242F5 /* CardView.swift in Sources */,
 				59B97873247EE06F008722FE /* ContentGenerator.swift in Sources */,
 				5955AD08247D827A002242F5 /* Content.swift in Sources */,
+				596244132480420B005A8E85 /* VoiceReader.swift in Sources */,
 				5955ACE8247D8230002242F5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,14 +400,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"jozu/Preview Content\"";
-				DEVELOPMENT_TEAM = 66KJH684S8;
+				DEVELOPMENT_TEAM = 932U5M7YW2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = jozu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fr.keuha.jozu;
+				PRODUCT_BUNDLE_IDENTIFIER = keuha.jozu.fr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -412,14 +420,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"jozu/Preview Content\"";
-				DEVELOPMENT_TEAM = 66KJH684S8;
+				DEVELOPMENT_TEAM = 932U5M7YW2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = jozu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fr.keuha.jozu;
+				PRODUCT_BUNDLE_IDENTIFIER = keuha.jozu.fr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
