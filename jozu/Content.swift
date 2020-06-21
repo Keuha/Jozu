@@ -51,7 +51,7 @@ let romaji = [
     ["za","zi","zu","ze","zo"],
     ["ta","chi","tsu","te","to"],
     ["da","dzi","dzu","de","do"],
-    ["ha","hi","hu","he","ho"],
+    ["ha","hi","fu","he","ho"],
     ["ba","bi","bu","be","bo"],
     ["pa","pi","pu","pe","po"],
     ["ma","mi","mu","me","mo"],

@@ -33,16 +33,9 @@ class ContentHandler: ObservableObject {
         didChange.send(())
     }
     
-    public func verify(content: String) -> Bool {
-        print(content)
-        print(self.toGuess!)
-        
-        if let e: ContentInformation = possibilities.first(where: {elem in elem.content == content}) {
-            if e.y == toGuess.y && e.x == toGuess.x{
-                return true
-            }
-        }
-        return false
+    public func verify(contentInformation: ContentInformation) -> Bool {
+        return contentInformation.x == toGuess.x &&
+            contentInformation.y == toGuess.y
     }
     
     public func generate() {
@@ -54,10 +47,7 @@ class ContentHandler: ObservableObject {
         let content = contentArray[Bool.random() ? 0 : 1]
         let x = Int.random(in: 0 ..< content.count)
         let row = content[x]
-        print("ROW IS \(row)")
         let y = Int.random(in: 0 ..< row.count)
-        print("index in row will be \(y)")
-        print("so char will be \(row[y])")
         toGuess = ContentInformation(x:x, y:y, content: row[y])
         toGuess.content = row[toGuess.y]
         pickContentInformation(content: contentArray[2])
@@ -68,13 +58,11 @@ class ContentHandler: ObservableObject {
     }
     
     private func pickCorrect(content: [[String]]) {
-        print("pickCorrect ==> Correct is \(toGuess)")
         var value = ContentInformation()
         value.x = toGuess.x
         let row = content[toGuess.x]
         value.y = toGuess.y
         value.content = row[toGuess.y];
-        print("ValuePicked ==> \(value)")
         possibilities.append(value)
     }
     

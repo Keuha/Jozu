@@ -9,20 +9,20 @@
 import SwiftUI
 import AVFoundation
 
-struct AnswerCardContainer: View {
-    let synth = AVSpeechSynthesizer()
-    var content : [String]
-    var onTap: ((String) -> Bool)
+struct AnswerCardContainer: View, Reader {
+    private let synth = AVSpeechSynthesizer()
+    var content : [ContentInformation]
+    var onTap: ((ContentInformation) -> Bool)
     var body: some View {
         VStack {
             HStack {
                 Spacer()
                 buttonCreator(0).onTapGesture {
-                    self.read(str: self.content[0])
+                    self.read(contentInformation: self.content[0], synth: self.synth)
                     self.onTap(self.content[0])
                 }
                 buttonCreator(1).onTapGesture {
-                    self.read(str: self.content[1])
+                    self.read(contentInformation: self.content[1], synth: self.synth)
                     self.onTap(self.content[1])
                 }
                 Spacer()
@@ -30,11 +30,11 @@ struct AnswerCardContainer: View {
             HStack {
                 Spacer()
                 buttonCreator(2).onTapGesture {
-                     self.read(str: self.content[2])
+                    self.read(contentInformation: self.content[2], synth: self.synth)
                     self.onTap(self.content[2])
                 }
                 buttonCreator(3).onTapGesture {
-                    self.read(str: self.content[3])
+                    self.read(contentInformation: self.content[3], synth: self.synth)
                     self.onTap(self.content[3])
                 }
                  Spacer()
@@ -43,12 +43,6 @@ struct AnswerCardContainer: View {
     }
     
     func buttonCreator(_ idx: Int) -> some View {
-        CardView(content: content[idx], fontSize: 20).cornerRadius(20)
-    }
-    
-    func read(str:String) {
-        let utterance = AVSpeechUtterance(string: str)
-        utterance.voice = AVSpeechSynthesisVoice(language: "ja-JP")
-        synth.speak(utterance)
+        CardView(content: content[idx].content, fontSize: 20).cornerRadius(20)
     }
 }

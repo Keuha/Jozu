@@ -14,19 +14,17 @@ struct CardContainerView: View {
         VStack {
             HStack {
                 Spacer()
-                VoiceReadingCard(cardViewContent: self.contentHandler.toGuess.content).cornerRadius(25).padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                VoiceReadingCard(cardViewContent: self.contentHandler.toGuess).cornerRadius(25).padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                 Spacer()
             }
             Spacer()
-            AnswerCardContainer(content: self.contentHandler.possibilities.map{e in e.content}, onTap: verify)
+            AnswerCardContainer(content: self.contentHandler.possibilities, onTap: verify)
             Spacer()
         }
     }
     
-    func verify(content: String) -> Bool {
-        print(contentHandler.toGuess.content)
-        print(contentHandler.possibilities)
-        if contentHandler.verify(content: content) {
+    func verify(contentInformation: ContentInformation) -> Bool {
+        if contentHandler.verify(contentInformation: contentInformation) {
             contentHandler.generate()
             return true;
         }

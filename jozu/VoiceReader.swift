@@ -9,17 +9,31 @@
 import SwiftUI
 import AVFoundation
 
+protocol Reader {
+    func read(contentInformation: ContentInformation, synth: AVSpeechSynthesizer)
+}
 
-struct VoiceReadingCard: View {
-    let synth = AVSpeechSynthesizer()
-    var cardViewContent: String
+extension Reader {
+    func read(contentInformation: ContentInformation, synth: AVSpeechSynthesizer) {
+        print("Reader")
+        print("\(contentInformation)")
+           let utterance = AVSpeechUtterance(string:" \(hiragana[contentInformation.x][contentInformation.y]) ")
+           utterance.voice = AVSpeechSynthesisVoice(language: "ja-JP");
+           utterance.rate = 0.25
+           synth.speak(utterance)
+       }
+}
+
+struct VoiceReadingCard: View, Reader {
+    private let synth = AVSpeechSynthesizer()
+    var cardViewContent: ContentInformation
     var body: some View {
         ZStack (alignment: .bottomTrailing) {
-            CardView(content: cardViewContent)
+            CardView(content: cardViewContent.content)
             VStack (alignment: .leading){
                 HStack (alignment: .top) {
                     Button(action: {
-                        self.read()
+                        self.read(contentInformation: self.cardViewContent, synth: self.synth)
                     }, label: {
                         Image("speaker")
                             .resizable()
@@ -33,16 +47,11 @@ struct VoiceReadingCard: View {
         }
     }
     
-    func read() {
-        let utterance = AVSpeechUtterance(string: cardViewContent)
-        utterance.voice = AVSpeechSynthesisVoice(language: "ja-JP")
-        utterance.rate = 0.15
-        synth.speak(utterance)
-    }
+   
 }
 
 struct VoiceReader_Previews: PreviewProvider {
     static var previews: some View {
-        VoiceReadingCard(cardViewContent: "e").frame(width:220, height: 220)
+        VoiceReadingCard(cardViewContent: ContentInformation(x: 0, y: 0, content: "a")).frame(width:220, height: 220)
     }
 }
