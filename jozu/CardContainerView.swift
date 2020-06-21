@@ -12,6 +12,7 @@ struct CardContainerView: View {
     @ObservedObject var contentHandler = ContentHandler()
     var body: some View {
         VStack {
+            Spacer()
             HStack {
                 Spacer()
                 VoiceReadingCard(cardViewContent: self.contentHandler.toGuess).cornerRadius(25).padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
