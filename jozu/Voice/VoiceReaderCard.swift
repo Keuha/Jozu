@@ -9,19 +9,6 @@
 import SwiftUI
 import AVFoundation
 
-protocol Reader {
-    func read(contentInformation: ContentInformation, synth: AVSpeechSynthesizer)
-}
-
-extension Reader {
-    func read(contentInformation: ContentInformation, synth: AVSpeechSynthesizer) {
-           let utterance = AVSpeechUtterance(string:" \(hiragana[contentInformation.x][contentInformation.y]) ")
-           utterance.rate = 0.25
-           utterance.pitchMultiplier = 0.8
-           synth.speak(utterance)
-       }
-}
-
 struct VoiceReadingCard: View, Reader {
     private let synth = AVSpeechSynthesizer()
     var cardViewContent: ContentInformation
