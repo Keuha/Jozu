@@ -15,11 +15,9 @@ protocol Reader {
 
 extension Reader {
     func read(contentInformation: ContentInformation, synth: AVSpeechSynthesizer) {
-        print("Reader")
-        print("\(contentInformation)")
            let utterance = AVSpeechUtterance(string:" \(hiragana[contentInformation.x][contentInformation.y]) ")
-           utterance.voice = AVSpeechSynthesisVoice(language: "ja-JP");
            utterance.rate = 0.25
+           utterance.pitchMultiplier = 0.8
            synth.speak(utterance)
        }
 }
